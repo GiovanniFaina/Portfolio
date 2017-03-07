@@ -20,7 +20,6 @@
       About
     },
     mounted: function () {
-      console.log('mounted')
       $('#fullpage').fullpage()
     }
   }
