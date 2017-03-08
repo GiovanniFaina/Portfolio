@@ -11,6 +11,7 @@ export default {
 }
 </script>
 
+<style src="./assets/styles/main.sass" lang="sass"></style>
 <style lang="sass">
 #app
   font-family: 'Avenir', Helvetica, Arial, sans-serif
