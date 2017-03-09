@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="wrapper">
-      <h1 class="medium">2D & 3D Designer</h1>
+      <h2 class="medium">2D & 3D Designer</h2>
       <p>Petite descrption de ce merveilleux métier qu’est Designer<br>
         Et oui mon ptit valou !</p>
     </div>

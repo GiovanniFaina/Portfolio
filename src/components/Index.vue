@@ -1,5 +1,6 @@
 <template>
   <div id="fullpage">
+    <logo></logo>
     <app-menu></app-menu>
     <home></home>
     <works></works>
@@ -10,6 +11,7 @@
 <script>
   import $ from 'jquery'
   import 'fullpage.js'
+  import Logo from './partials/Logo'
   import AppMenu from './partials/AppMenu'
   import Home from './Home'
   import Works from './Works'
@@ -17,6 +19,7 @@
 
   export default {
     components: {
+      Logo,
       AppMenu,
       Home,
       Works,
@@ -26,6 +29,7 @@
       $('#fullpage').fullpage({
         menu: '#menu',
         anchors: ['home', 'works', 'about'],
+        fixedElements: '.logo-container',
         onLeave: function (index, nextIndex, direction) {
           if (nextIndex === 2) {
             $('#menu ul').addClass('highlight-half').removeClass('highlight')
