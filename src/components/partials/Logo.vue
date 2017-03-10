@@ -1,6 +1,11 @@
 <template>
-  <div class="logo-container medium">
-    <h1><a href="#home">Giovanni <span>Faina</span></a></h1>
+  <div class="logo-container">
+    <h1>
+      <a href="#home" data-menuanchor="home" class="active">
+        G<span class="animated-name">iovanni</span>
+        <span class="name">F<span class="animated-name">aina</span></span>
+      </a>
+    </h1>
   </div>
 </template>
 

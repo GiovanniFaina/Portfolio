@@ -32,15 +32,21 @@
         fixedElements: '.logo-container',
         onLeave: function (index, nextIndex, direction) {
           if (nextIndex === 2) {
+            $('.logo-container a').removeClass('active')
+            $('.animated-name').addClass('hidden')
             $('#menu ul').addClass('highlight-half').removeClass('highlight')
             $('#menu ul li').removeClass('highlight')
             $('#menu ul').children().slice(0, 2).each(function (index, element) {
               $(element).addClass('highlight')
             })
           } else if (nextIndex === 3) {
+            $('.logo-container a').removeClass('active')
+            $('.animated-name').addClass('hidden')
             $('#menu ul').addClass('highlight')
             $('#menu ul li').addClass('highlight')
           } else {
+            $('.logo-container a').addClass('active')
+            $('.animated-name').removeClass('hidden')
             $('#menu ul').removeClass('highlight').removeClass('highlight-half')
             $('#menu ul li').removeClass('highlight')
           }

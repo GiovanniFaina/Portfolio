@@ -1,0 +1,61 @@
+.resume-container
+  margin: 60px 0
+
+  a
+    position: relative
+    display: inline-block
+    text-decoration: none
+    color: $white
+    font-size: 22px
+    padding: 10px 32px
+    border: 2px solid transparent
+    -moz-border-image: -moz-linear-gradient(top left, $main-orange 0%, $red 100%) 1
+    -webkit-border-image: -webkit-linear-gradient(top left, $main-orange 0%, $red 100%) 1
+    border-image: linear-gradient(to bottom right, $main-orange 0%, $red 100%) 1
+
+    .border-delimiter
+      position: absolute
+      background: $bg-color
+      transition: $main-transition
+
+      &#top, &#right
+        right: -2px
+        top: -2px
+
+      &#bottom, &#left
+        left: -2px
+        bottom: -2px
+
+      &#top, &#bottom
+        width: 80%
+        height: 2px
+
+      &#right, &#left
+        width: 2px
+        height: 40%
+
+    &:hover
+      .border-delimiter
+        &#top, &#bottom
+          width: 0
+
+        &#right, &#left
+          height: 0
+
+.socials
+  a
+    color: $white
+    text-decoration: none
+    font-size: 26px
+    transition: none
+    padding: 5px 5px 0
+
+    &:hover
+      background: $linear-gradient
+      color: transparent
+      -webkit-background-clip: text
+      background-clip: text
+      transition: $main-transition
+
+    &:before
+      vertical-align: bottom
