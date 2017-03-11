@@ -4,6 +4,34 @@ p
 .home p
   font-size: 16px
 
+.index
+  position: absolute
+  transform: skew(20deg)
+  font-size: 68px
+  opacity: .25
+  top: -55px
+  left: -45px
+
+.title
+  position: absolute
+  transform: translate3d(10px, -50%, 0) skew(20deg)
+  font-size: 40px
+  top: 50%
+  left: 20px
+
+.type
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translate3d(-50%, 10px, 0) skew(20deg)
+  width: 100%
+  font-size: 16px
+
+.title,
+.type
+  opacity: 0
+  transition: $main-transition
+
 .about p
   text-align: left
   font-size: 22px
@@ -13,3 +41,10 @@ p
   font-size: 20px
   font-weight: 300
   margin: 0
+
+.work-description-container
+  .content
+    p
+      font-size: 18px
+      line-height: 1.5em
+      margin: 15px 0

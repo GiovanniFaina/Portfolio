@@ -1,3 +1,23 @@
+.works-list
+  a
+    color: $white
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+    &:hover
+      .title,
+      .type
+        opacity: 1
+
+      .title
+        transform: translate3d(0, -50%, 0) skew(20deg)
+
+      .type
+        transform: translate3d(-50%, 0, 0) skew(20deg)
+
 .resume-container
   margin: 60px 0
 
@@ -59,3 +79,19 @@
 
     &:before
       vertical-align: bottom
+
+.back-button
+  a
+    display: flex
+    align-items: center
+    color: $white
+    font-size: 22px
+    text-decoration: none
+
+    img
+      margin-right: 22px
+      transition: $main-transition
+
+    &:hover
+      img
+        transform: translate3d(-10px, 0, 0)

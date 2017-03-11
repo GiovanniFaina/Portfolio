@@ -18,6 +18,7 @@
   import About from './About'
 
   export default {
+    name: 'index',
     components: {
       Logo,
       AppMenu,
@@ -52,6 +53,9 @@
           }
         }
       })
+    },
+    destroyed: function () {
+      $.fn.fullpage.destroy('all')
     }
   }
 </script>
