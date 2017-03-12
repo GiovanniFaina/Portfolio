@@ -1,7 +1,7 @@
 <template>
   <div class="logo-container">
     <h1>
-      <a href="#home" data-menuanchor="home" class="active">
+      <a href="#home" data-menuanchor="home" class="active medium">
         G<span class="animated-name">iovanni</span>
         <span class="name">F<span class="animated-name">aina</span></span>
       </a>

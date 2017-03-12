@@ -82,7 +82,9 @@
 
 .back-button
   a
-    display: flex
+    position: fixed
+    z-index: 3
+    display: inline-flex
     align-items: center
     color: $white
     font-size: 22px
@@ -95,3 +97,7 @@
     &:hover
       img
         transform: translate3d(-10px, 0, 0)
+
+.arrows
+  &.next
+    transform: rotate(180deg)

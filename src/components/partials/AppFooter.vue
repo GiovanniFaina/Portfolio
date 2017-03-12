@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container">
         <div class="about-wrapper">
-            <div class="copyright">
+            <div class="copyright ultra-light">
                 <p>&copy; Giovanni Faina - 2017</p>
             </div>
             <div class="socials">

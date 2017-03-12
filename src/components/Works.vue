@@ -7,8 +7,8 @@
             <img :src="work.cover">
           </div>
           <router-link :to="{ name: 'work', params: { id: work.id } }">
-            <p class="index medium">0{{ work.id }}</p>
-            <p class="title">{{ work.title }}</p>
+            <p class="index semi-bold">0{{ work.id }}</p>
+            <p class="title semi-bold">{{ work.title }}</p>
             <p class="type">{{ work.type }}</p>
           </router-link>
         </li>

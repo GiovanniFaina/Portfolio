@@ -1,2 +1,31 @@
+@font-face
+  font-family: 'avenir-utlra-light'
+  src: url(/static/fonts/avenir/AvenirNext-UltraLight.ttf)
+
+@font-face
+  font-family: 'avenir'
+  src: url(/static/fonts/avenir/AvenirNext-Regular.ttf)
+
+@font-face
+  font-family: 'avenir-italic'
+  src: url(/static/fonts/avenir/AvenirNext-Italic.ttf)
+
+@font-face
+  font-family: 'avenir-medium'
+  src: url(/static/fonts/avenir/AvenirNext-Medium.ttf)
+
+@font-face
+  font-family: 'avenir-semi-bold'
+  src: url(/static/fonts/avenir/AvenirNext-DemiBold.ttf)
+
+.ultra-light
+  +fontFamily('avenir-utlra-light')
+
+.italic
+  +fontFamily('avenir-italic')
+
 .medium
-  font-weight: 600
+  +fontFamily('avenir-medium')
+
+.semi-bold
+  +fontFamily('avenir-semi-bold')
