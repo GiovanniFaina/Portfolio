@@ -6,8 +6,13 @@
     position: absolute
     top: 0
     left: 0
+    z-index: 5
 
     &:hover
+      & ~ .cover-container
+        img
+          opacity: .15
+
       .title,
       .type
         opacity: 1
@@ -47,7 +52,7 @@
         bottom: -2px
 
       &#top, &#bottom
-        width: 80%
+        width: 90%
         height: 2px
 
       &#right, &#left
@@ -99,5 +104,61 @@
         transform: translate3d(-10px, 0, 0)
 
 .arrows
-  &.next
-    transform: rotate(180deg)
+  color: $white
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  padding: 15px 40px
+  position: relative
+
+  .hover-line
+    position: absolute
+    top: 50%
+    right: -30px
+    transform: translate3d(0, -50%, 0)
+    width: 50px
+    height: 2px
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 0
+      height: 2px
+      transition: width 0s ease-in-out
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 0
+      height: 2px
+      background: $main-orange
+      transition: width .5s ease-in-out
+
+  &:hover
+    .hover-line
+      &:before
+        width: 50px
+        background: $main-orange
+        transition: width .5s ease-in-out
+
+      &:after
+        width: 50px
+        background: transparent
+        transition: all 0s ease-in-out
+
+.prev
+  .arrows
+    .hover-line
+      bottom: 0
+      left: -30px
+
+      &:before
+        right: 0
+        left: initial
+
+      &:after
+        left: 0

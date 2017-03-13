@@ -9,6 +9,11 @@
   align-items: center
   justify-content: center
   overflow: hidden
+  background: $linear-gradient
+
+  img
+    opacity: 1
+    transition: $main-transition
 
 .description-container
   width: 100%
@@ -42,6 +47,12 @@
   transform: translate3d(-50%, 0, 0)
 
 .images-list-container
-  margin: 30% 0 20px
   z-index: 2
   position: relative
+
+.arrows-container
+  width: 50%
+
+  &.prev
+    text-align: right
+    border-right: 2px solid $white

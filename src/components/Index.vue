@@ -31,8 +31,14 @@
         menu: '#menu',
         anchors: ['home', 'works', 'about'],
         fixedElements: '.logo-container',
+        afterLoad: function (anchorLink, index) {
+          if (anchorLink === 'works') {
+            $('.works-list li').addClass('visible')
+          }
+        },
         onLeave: function (index, nextIndex, direction) {
           if (nextIndex === 2) {
+            $('.pulse-container').removeClass('visible')
             $('.logo-container a').removeClass('active')
             $('.animated-name').addClass('hidden')
             $('#menu ul').addClass('highlight-half').removeClass('highlight')
@@ -40,12 +46,15 @@
             $('#menu ul').children().slice(0, 2).each(function (index, element) {
               $(element).addClass('highlight')
             })
+            $('.works-list li').addClass('visible')
           } else if (nextIndex === 3) {
+            $('.pulse-container').removeClass('visible')
             $('.logo-container a').removeClass('active')
             $('.animated-name').addClass('hidden')
             $('#menu ul').addClass('highlight')
             $('#menu ul li').addClass('highlight')
           } else {
+            $('.pulse-container').addClass('visible')
             $('.logo-container a').addClass('active')
             $('.animated-name').removeClass('hidden')
             $('#menu ul').removeClass('highlight').removeClass('highlight-half')

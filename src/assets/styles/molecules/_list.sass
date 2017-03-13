@@ -10,10 +10,24 @@
     height: 530px
     width: 130px
     position: relative
-    transform: skew(-20deg)
+    transform: skew(-20deg) translate3d(0, -100px, 0)
+    opacity: 0
+    transition: $main-transition .3s
+
+    &.visible
+      opacity: 1
+      transform: skew(-20deg) translate3d(0, 0, 0)
+
+      &:nth-child(even)
+        transform: skew(-20deg) translate3d(0, 70px, 0)
+
+    @for $i from 1 through 5
+      &:nth-child(#{$i})
+        background: red
+        z-index: calc(5 - #{$i})
 
     &:nth-child(even)
-      margin-top: 100px
+      transform: skew(-20deg) translate3d(0, 170px, 0)
 
     img
       height: 100%
@@ -29,16 +43,16 @@
   ul
     li
       display: inline-block
-      margin: 20px 0
+      margin: 10px 0
 
       &.half-width
         width: 48%
 
         &:nth-child(odd)
-          margin-right: 20px
+          margin-right: 10px
 
         &:nth-child(even)
-          margin-left: 20px
+          margin-left: 10px
 
       &.full-width
         width: 100%

@@ -23,21 +23,27 @@
             </li>
         </ul>
     </div>
-    <div class="navigation">
-      <router-link
-        v-if="isFirstWork"
-        :to="{ name: 'work', params: { id: work.id - 1 } }"
-        class="arrows prev"
-      >
-        <img src="/static/images/arrow.png">
-      </router-link>
-      <router-link
-        v-if="isLastWork"
-        :to="{ name: 'work', params: { id: work.id + 1 } }"
-        class="arrows next"
-      >
-        <img src="/static/images/arrow.png">
-      </router-link>
+    <div class="navigation medium">
+      <div class="arrows-container prev">
+        <router-link
+                v-if="isFirstWork"
+                :to="{ name: 'work', params: { id: work.id - 1 } }"
+                class="arrows"
+        >
+          <p>{{ works[work.id - 2].title }}</p>
+          <span class="hover-line"></span>
+        </router-link>
+      </div>
+      <div class="arrows-container next">
+        <router-link
+                v-if="isLastWork"
+                :to="{ name: 'work', params: { id: work.id + 1 } }"
+                class="arrows"
+        >
+          <p>{{ works[work.id].title }}</p>
+          <span class="hover-line"></span>
+        </router-link>
+      </div>
     </div>
     <app-footer></app-footer>
   </div>
