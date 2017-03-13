@@ -34,6 +34,8 @@
         afterLoad: function (anchorLink, index) {
           if (anchorLink === 'works') {
             $('.works-list li').addClass('visible')
+          } else if (anchorLink === 'home' || index === 1) {
+            $('.pulse-container').addClass('visible')
           }
         },
         onLeave: function (index, nextIndex, direction) {

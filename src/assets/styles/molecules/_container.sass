@@ -27,10 +27,16 @@
   bottom: 20px
   width: 100%
 
+  +phone
+    bottom: 0
+
   .copyright,
   .socials
     height: 30px
     width: 50%
+
+    +phone
+      line-height: 30px
 
   .copyright
     float: left
@@ -45,6 +51,9 @@
   position: fixed
   left: 50%
   transform: translate3d(-50%, 0, 0)
+
+  +phone
+    margin-top: 100px
 
 .images-list-container
   z-index: 2

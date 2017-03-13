@@ -35,9 +35,17 @@
 
 .socials
   ul
+
+    +phone
+      display: flex
+      justify-content: space-around
+
     li
       display: inline-block
       margin: 0 15px
+
+      +phone
+        margin: 0 5px
 
 .images-list-container
   ul
@@ -53,6 +61,13 @@
 
         &:nth-child(even)
           margin-left: 10px
+
+        +phone
+          width: 100%
+
+        &:nth-child(odd),
+        &:nth-child(even)
+          margin: 0
 
       &.full-width
         width: 100%

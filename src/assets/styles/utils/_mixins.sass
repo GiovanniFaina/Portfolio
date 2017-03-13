@@ -1,3 +1,32 @@
 // Font family
 =fontFamily($font)
   font-family: $font, Helvetica, Arial, sans-serif
+
+// Media Queries
+=smallPhone
+  @media (max-height: #{$smallPhoneHeight}) and (orientation: portrait)
+    @content
+
+=smallPhoneLandscape
+  @media (max-height: #{$smallPhoneHeight}) and (orientation: landscape)
+    @content
+
+=phone
+  @media (max-width: #{$tabletWidth - 1})
+    @content
+
+=phoneLandscape
+  @media (max-width: #{$tabletWidth - 1}) and (orientation: landscape)
+    @content
+
+=tablet
+  @media (min-width: #{$tabletWidth}) and (max-width: #{$desktopWidth})
+    @content
+
+=phoneAndTablet
+  @media (max-width: #{$desktopWidth})
+    @content
+
+=desktop
+  @media (min-width: #{$desktopWidth + 1px})
+    @content
