@@ -1,6 +1,7 @@
 .works-container
   width: 100%
   height: 100%
+  position: relative
 
 .cover-container
   width: 100%
@@ -14,6 +15,8 @@
   img
     opacity: 1
     transition: $main-transition
+    height: 100%
+    transform: skew(20deg)
 
 .description-container
   width: 100%
@@ -53,7 +56,8 @@
   transform: translate3d(-50%, 0, 0)
 
   +phone
-    margin-top: 100px
+    margin-top: 50px
+    width: 80%
 
 .images-list-container
   z-index: 2

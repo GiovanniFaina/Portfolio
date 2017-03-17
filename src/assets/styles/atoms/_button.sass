@@ -1,5 +1,5 @@
 .works-list
-  a
+  a:not(.works-arrows)
     color: $white
     width: 100%
     height: 100%
@@ -7,6 +7,23 @@
     top: 0
     left: 0
     z-index: 5
+
+    +phoneAndTabletAndiPadProLandscape
+      & ~ .cover-container
+        img
+          opacity: .15
+
+      .title,
+      .type
+        opacity: 1
+
+      &:hover,
+      &:focus
+        .title
+          transform: translate3d(10px, -50%, 0) skew(20deg)
+
+        .type
+          transform: translate3d(-50%, 10px, 0) skew(20deg) !important
 
     &:hover,
     &:focus
@@ -56,19 +73,19 @@
         display: none
 
       &#top, &#right
-        right: -2px
-        top: -2px
+        right: -4px
+        top: -4px
 
       &#bottom, &#left
-        left: -2px
-        bottom: -2px
+        left: -4px
+        bottom: -4px
 
       &#top, &#bottom
         width: 90%
-        height: 2px
+        height: 6px
 
       &#right, &#left
-        width: 2px
+        width: 6px
         height: 40%
 
     &:hover,
@@ -122,6 +139,15 @@
       margin-right: 22px
       transition: $main-transition
 
+    span
+      transform: translate3d(0, -50px, 0)
+      opacity: 0
+      transition: $main-transition
+
+      &.visible
+        opacity: 1
+        transform: translate3d(0, 0, 0)
+
     &:hover,
     &:focus
       outline: none
@@ -137,6 +163,9 @@
   padding: 15px 40px
   position: relative
 
+  +phoneAndTablet
+    .hover-line
+      display: none
 
   +phone
     padding: 15px 20px
@@ -199,3 +228,18 @@
 
       &:after
         left: 0
+
+.works-arrows
+  position: absolute
+  top: 50%
+  transform: translate3d(0, -50%, 0)
+  z-index: 1000
+
+  &.works-prev
+    left: 5%
+
+  &.works-next
+    right: 5%
+
+    img
+      transform: rotate(180deg)

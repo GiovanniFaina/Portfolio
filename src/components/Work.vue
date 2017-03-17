@@ -3,7 +3,7 @@
     <div class="work-wrapper">
       <div class="back-button">
         <router-link :to="{ name: 'index', hash: '#works' }">
-          <img src="/static/images/arrow.png"> Back
+          <img src="/static/images/arrow.png"> <span class="visible">Back</span>
         </router-link>
       </div>
       <div class="work-description-container">
@@ -83,7 +83,13 @@
       let workDescriptionOffsetTop = workDescription.offsetTop
       let workDescriptionOffsetHeight = workDescription.offsetHeight
       let workDescriptionOffsetBottom = workDescriptionOffsetHeight + workDescriptionOffsetTop
-      $('.images-list-container').css('margin-top', workDescriptionOffsetBottom)
+      $('.images-list-container').css('margin-top', workDescriptionOffsetBottom + 50)
+      $(window).resize((event) => {
+        let workDescriptionOffsetTop = workDescription.offsetTop
+        let workDescriptionOffsetHeight = workDescription.offsetHeight
+        let workDescriptionOffsetBottom = workDescriptionOffsetHeight + workDescriptionOffsetTop
+        $('.images-list-container').css('margin-top', workDescriptionOffsetBottom + 50)
+      })
       $(window).scroll((event) => {
         let windowOffsetTop = window.pageYOffset
         this.toggleWorkDescriptionVisibility(windowOffsetTop, workDescriptionOffsetTop, workDescriptionOffsetBottom)
@@ -115,6 +121,7 @@
       },
       toggleWorkDescriptionVisibility: function (windowOffsetTop, workDescriptionOffsetTop, workDescriptionOffsetBottom) {
         if (windowOffsetTop < workDescriptionOffsetBottom) {
+          $('.back-button span').addClass('visible')
           let ratio = windowOffsetTop / workDescriptionOffsetBottom
           let percentage = ratio * 100
           $('.work-description-container').css({
@@ -123,6 +130,7 @@
             'display': 'block'
           })
         } else if (windowOffsetTop > workDescriptionOffsetBottom) {
+          $('.back-button span').removeClass('visible')
           $('.work-description-container').css({
             'opacity': 0,
             'display': 'none'

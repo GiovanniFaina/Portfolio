@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueLazyload from 'vue-lazyload'
+import VueTouch from 'vue-touch'
 
 Vue.use(VueLazyload)
+Vue.use(VueTouch)
 
 Vue.config.productionTip = false
 

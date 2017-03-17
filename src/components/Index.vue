@@ -3,7 +3,8 @@
     <logo></logo>
     <app-menu></app-menu>
     <home></home>
-    <works></works>
+    <works-responsive v-if="isSmallScreen"></works-responsive>
+    <works v-else></works>
     <about></about>
   </div>
 </template>
@@ -15,6 +16,7 @@
   import AppMenu from './partials/AppMenu'
   import Home from './Home'
   import Works from './Works'
+  import WorksResponsive from './WorksResponsive'
   import About from './About'
 
   export default {
@@ -24,7 +26,18 @@
       AppMenu,
       Home,
       Works,
+      WorksResponsive,
       About
+    },
+    data: function () {
+      return {
+        isSmallScreen: false
+      }
+    },
+    beforeMount: function () {
+      let windowWidth = window.innerWidth
+      let windowHeight = window.innerHeight
+      this.isSmallScreen = windowWidth / windowHeight < 1.34 || windowWidth <= 800
     },
     mounted: function () {
       $('#fullpage').fullpage({
@@ -33,7 +46,7 @@
         fixedElements: '.logo-container',
         afterLoad: function (anchorLink, index) {
           if (anchorLink === 'works') {
-            $('.works-list li').addClass('visible')
+            $('.works-list-container').addClass('visible')
           } else if (anchorLink === 'home' || index === 1) {
             $('.pulse-container').addClass('visible')
           }
@@ -48,7 +61,7 @@
             $('#menu ul').children().slice(0, 2).each(function (index, element) {
               $(element).addClass('highlight')
             })
-            $('.works-list li').addClass('visible')
+            $('.works-list .works-list-container').addClass('visible')
           } else if (nextIndex === 3) {
             $('.pulse-container').removeClass('visible')
             $('.logo-container a').removeClass('active')
@@ -62,6 +75,11 @@
             $('#menu ul').removeClass('highlight').removeClass('highlight-half')
             $('#menu ul li').removeClass('highlight')
           }
+        },
+        afterResize: function () {
+          let windowWidth = window.innerWidth
+          let windowHeight = window.innerHeight
+          this.isSmallScreen = windowWidth / windowHeight < 1.34 || windowWidth <= 800
         }
       })
     },

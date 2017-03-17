@@ -6,36 +6,77 @@
   justify-content: space-around
   align-items: center
 
-  li
+  +phoneAndTabletAndiPadProLandscape
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    margin: 0
+    width: 500vw
+    height: 100%
+    transition: $main-transition
+
+  .works-list-container
     height: 530px
     width: 130px
-    position: relative
     transform: skew(-20deg) translate3d(0, -100px, 0)
     opacity: 0
     transition: $main-transition .3s
+    position: relative
+
+    @for $i from 1 through 5
+      &:nth-child(#{$i})
+        z-index: calc(5 - #{$i})
 
     &.visible
       opacity: 1
       transform: skew(-20deg) translate3d(0, 0, 0)
 
-      &:nth-child(even)
-        transform: skew(-20deg) translate3d(0, 70px, 0)
+    +phoneAndTabletAndiPadProLandscape
+      width: 100vw
+      height: 100vh
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      transform: skew(0)
+      opacity: 1
 
-    @for $i from 1 through 5
-      &:nth-child(#{$i})
-        background: red
-        z-index: calc(5 - #{$i})
+      &.visible
+        transform: skew(0)
+
+      &:nth-child(even)
+        transform: skew(0) !important
+
+        &.visible
+          transform: skew(0) !important
+
+        &.visible
+          transform: skew(0)
 
     &:nth-child(even)
       transform: skew(-20deg) translate3d(0, 170px, 0)
 
-    img
-      height: 100%
-      transform: skew(20deg)
+      &.visible
+        transform: skew(-20deg) translate3d(0, 70px, 0)
+
+
+    .works-list-wrapper
+      height: 530px
+      width: 130px
+      transition: $main-transition .3s
+      position: relative
+      transform: skew(-20deg)
+
+      +phone
+        height: 300px
+        width: 80px
+
+      img
+        height: 100%
+        transform: skew(20deg)
 
 .socials
   ul
-
     +phone
       display: flex
       justify-content: space-around
@@ -49,25 +90,19 @@
 
 .images-list-container
   ul
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
     li
       display: inline-block
-      margin: 10px 0
+      margin: 20px 0
 
       &.half-width
         width: 48%
 
-        &:nth-child(odd)
-          margin-right: 10px
-
-        &:nth-child(even)
-          margin-left: 10px
-
         +phone
           width: 100%
-
-        &:nth-child(odd),
-        &:nth-child(even)
-          margin: 0
 
       &.full-width
         width: 100%
