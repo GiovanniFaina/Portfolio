@@ -9,6 +9,13 @@ nav
 
   +phoneAndTabletAndiPadProLandscape
     display: none
+    justify-content: center
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    background: $bg-color
+    z-index: 5
 
   +phone
     right: 0
@@ -88,3 +95,30 @@ nav
   &.highlight
     &:before
       height: 100%
+
+.hamburger
+  position: fixed
+  top: 20px
+  right: 20px
+  z-index: 10
+
+  +desktop
+    display: none
+
+  .line
+    width: 30px
+    height: 2px
+    background-color: $orange-menu
+    display: block
+    margin: 6px auto
+    transition: $main-transition
+
+  &.active
+    .line
+      &:first-child
+        opacity: 0
+        transform: translateX(-100%)
+
+      &:last-child
+        opacity: 0
+        transform: translateX(100%)

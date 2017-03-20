@@ -43,7 +43,7 @@
       $('#fullpage').fullpage({
         menu: '#menu',
         anchors: ['home', 'works', 'about'],
-        fixedElements: '.logo-container',
+        fixedElements: '.logo-container, .hamburger',
         afterLoad: function (anchorLink, index) {
           if (anchorLink === 'works') {
             $('.works-list-container').addClass('visible')
