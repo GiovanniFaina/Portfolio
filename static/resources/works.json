@@ -14,14 +14,13 @@
       "/static/images/works/jamstagr/image3.png",
       "/static/images/works/jamstagr/image4.png"
     ],
-    "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
     "client": "School project"
   },
   {
     "id": 2,
     "title": "Tesla Project",
-    "cover": "/static/images/covers/jamstagr.png",
+    "cover": "/static/images/covers/tesla.png",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices fermentum justo eu ultricies. Integer orci enim, tincidunt non elit in, imperdiet facilisis est.",
       "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
@@ -34,14 +33,13 @@
       "/static/images/works/tesla/image4.jpg",
       "/static/images/works/tesla/image5.jpg"
     ],
-    "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
     "client": "School project"
   },
   {
     "id": 3,
     "title": "Stage",
-    "cover": "/static/images/covers/jamstagr.png",
+    "cover": "/static/images/covers/stage.png",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices fermentum justo eu ultricies. Integer orci enim, tincidunt non elit in, imperdiet facilisis est.",
       "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
@@ -57,30 +55,27 @@
       "/static/images/works/internship/image7.png",
       "/static/images/works/internship/image8.png"
     ],
-    "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
     "client": "School project"
   },
   {
     "id": 4,
-    "title": "Jamstagr",
-    "cover": "/static/images/covers/jamstagr.png",
+    "title": "Portfolio",
+    "cover": "/static/images/covers/portfolio.png",
     "assets": [
-      "/static/images/covers/jamstagr.png",
-      "https://player.vimeo.com/video/204166688"
+      "/static/images/covers/jamstagr.png"
     ],
-    "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
     "client": "School project"
   },
   {
     "id": 5,
-    "title": "Jamstagr",
-    "cover": "/static/images/covers/jamstagr.png",
+    "title": "Mia",
+    "cover": "/static/images/covers/mia.png",
     "assets": [
-      "/static/images/covers/jamstagr.png"
+      "/static/images/covers/jamstagr.png",
+      "https://player.vimeo.com/video/204166688"
     ],
-    "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
     "client": "School project"
   }

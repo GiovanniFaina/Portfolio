@@ -104,6 +104,7 @@
     },
     watch: {
       '$route' (to, from) {
+        $('.arrows').blur()
         this.work = this.works.find(this.findWorkById)
         this.isFirstWork = parseInt(to.params.id) !== 1
         this.isLastWork = parseInt(to.params.id) !== this.works.length
