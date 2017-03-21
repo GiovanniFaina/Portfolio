@@ -10,8 +10,8 @@
     </div>
     <div class="wrapper">
       <h2 class="semi-bold">2D & 3D Designer</h2>
-      <p>Petite descrption de ce merveilleux métier qu’est Designer<br>
-        Et oui mon ptit valou !</p>
+      <p>Looking for an internship from June to December<br>
+         in UX / UI design or 3D design</p>
     </div>
   </div>
 </template>

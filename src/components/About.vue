@@ -2,10 +2,9 @@
   <div class="section about">
     <div class="description-container">
       <div class="about-wrapper">
-        <p>Très belle description de moi en anglais, car je suis bilingue et j’ai beaucoup de chose à dire sur moi-même !<br>
-          Genre que je suis à HETIC, que je suis designer 2D et 3D et que je travaille en tant que Mafieux !</p>
-        <p>Une vie dantesque comme on dit par chez nous, en Normandie !<br>
-          A ne pas confondre avec le payx de caux...</p>
+        <p>Hi ! I’m Giovanni, a french designer. I’m studying at HETIC and I looking for a 6 month internship.<br>
+          I have for passion the UX / UI design and 3D design.</p>
+        <p>Feel free to contact me at : fainagiovanni@gmail.com !</p>
         <div class="resume-container">
           <a href="#">
             Download my resume
