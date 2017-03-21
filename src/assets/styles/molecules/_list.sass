@@ -6,8 +6,7 @@
   justify-content: space-around
   align-items: center
 
-  +phoneAndTabletAndiPadProLandscape
-    display: block
+  +phoneAndTablet
     position: absolute
     top: 0
     left: 0
@@ -17,8 +16,6 @@
     transition: $main-transition
 
   .works-list-container
-    height: 530px
-    width: 130px
     transform: skew(-20deg) translate3d(0, -100px, 0)
     opacity: 0
     transition: $main-transition .3s
@@ -32,7 +29,7 @@
       opacity: 1
       transform: skew(-20deg) translate3d(0, 0, 0)
 
-    +phoneAndTabletAndiPadProLandscape
+    +phoneAndTablet
       width: 100vw
       height: 100vh
       display: inline-flex
@@ -63,9 +60,10 @@
     .works-list-wrapper
       height: 530px
       width: 130px
-      transition: $main-transition .3s
       position: relative
-      transform: skew(-20deg)
+
+      +phoneAndTablet
+        transform: skew(-20deg)
 
       +phone
         height: 300px
