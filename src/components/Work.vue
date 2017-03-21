@@ -18,8 +18,12 @@
     </div>
     <div class="images-list-container">
         <ul>
-            <li class="half-width" v-for="image in work.images">
-              <img class="work-images" v-lazy="image">
+            <li class="half-width" v-for="url in work.assets">
+              <img v-if="/jpg|png/.test(url)" class="work-images" v-lazy="url">
+              <div v-else class="iframe-container">
+                <img class="iframe-ratio" src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7"/>
+                <iframe :src="url" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
             </li>
         </ul>
     </div>
@@ -115,6 +119,7 @@
       toggleImagesWidth: function ({ el, naturalHeight, naturalWidth }) {
         let imageClass = this.isImagePortrait(naturalWidth, naturalHeight) ? 'half-width' : 'full-width'
         $(el).parent().removeClass('half-width').removeClass('full-width').addClass(imageClass)
+        $('.iframe-container').parent().removeClass('half-width').addClass('full-width')
       },
       isImagePortrait: function (width, height) {
         return height > width

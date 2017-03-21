@@ -8,7 +8,7 @@
       "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
       "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
     ],
-    "images": [
+    "assets": [
       "/static/images/works/jamstagr/image1.png",
       "/static/images/works/jamstagr/image2.png",
       "/static/images/works/jamstagr/image3.png",
@@ -27,7 +27,7 @@
       "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
       "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
     ],
-    "images": [
+    "assets": [
       "/static/images/works/tesla/image1.jpg",
       "/static/images/works/tesla/image2.jpg",
       "/static/images/works/tesla/image3.jpg",
@@ -47,7 +47,7 @@
       "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
       "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
     ],
-    "images": [
+    "assets": [
       "/static/images/works/internship/image1.png",
       "/static/images/works/internship/image2.png",
       "/static/images/works/internship/image3.png",
@@ -65,8 +65,9 @@
     "id": 4,
     "title": "Jamstagr",
     "cover": "/static/images/covers/jamstagr.png",
-    "images": [
-      "/static/images/covers/jamstagr.png"
+    "assets": [
+      "/static/images/covers/jamstagr.png",
+      "https://player.vimeo.com/video/204166688"
     ],
     "link": "http://dev.jamstagr.com",
     "type": "UI/UX design",
@@ -76,7 +77,7 @@
     "id": 5,
     "title": "Jamstagr",
     "cover": "/static/images/covers/jamstagr.png",
-    "images": [
+    "assets": [
       "/static/images/covers/jamstagr.png"
     ],
     "link": "http://dev.jamstagr.com",
