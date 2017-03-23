@@ -26,10 +26,6 @@ nav
   ul
     position: relative
     height: 60vh
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: center
 
     li
       background: $bg-color
@@ -49,21 +45,23 @@ nav
         a
           color: $orange-menu
 
-    &:before
-      content: ''
-      position: absolute
-      height: 100%
-      width: 2px
-      background: $grey
-      z-index: -1
-
+    &:before,
     &:after
       content: ''
       position: absolute
-      height: 0
       width: 2px
-      background: $orange-menu
       z-index: -1
+      left: 50%
+      top: 0
+      transform: translate3d(-50%, 0, 0)
+
+    &:before
+      height: 100%
+      background: $grey
+
+    &:after
+      height: 0
+      background: $orange-menu
       transition: $main-transition
 
     &.highlight-half

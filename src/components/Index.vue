@@ -45,7 +45,8 @@
             $('.animated-name').addClass('hidden')
             $('#menu ul').addClass('highlight-half').removeClass('highlight')
             $('#menu ul li').removeClass('highlight')
-            $('#menu ul').children().slice(0, 2).each(function (index, element) {
+            $('#menu ul .menu-list-container').children().slice(0, 2).each(function (index, element) {
+              console.log(element)
               $(element).addClass('highlight')
             })
             $('.works-list .works-list-container').addClass('visible')
@@ -70,3 +71,4 @@
     }
   }
 </script>
+

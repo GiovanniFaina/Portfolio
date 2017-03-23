@@ -74,6 +74,18 @@
       +phoneAndTablet
         display: none
 
+      &#top
+        transform-origin: right
+
+      &#bottom
+        transform-origin: left
+
+      &#right
+        transform-origin: top
+
+      &#left
+        transform-origin: bottom
+
       &#top, &#right
         right: -4px
         top: -4px
@@ -96,10 +108,10 @@
 
       .border-delimiter
         &#top, &#bottom
-          width: 0
+          transform: scaleX(0)
 
         &#right, &#left
-          height: 0
+          transform: scaleY(0)
 
 .socials
   a
@@ -126,6 +138,16 @@
 
       +phone
         vertical-align: middle
+
+@-moz-document url-prefix()
+  .socials
+    a
+      transition: $main-transition
+
+      &:hover,
+      &:focus
+        color: $main-orange
+        background: none
 
 .back-button
   a

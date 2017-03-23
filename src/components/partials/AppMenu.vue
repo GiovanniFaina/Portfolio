@@ -11,34 +11,36 @@
     </div>
     <nav id="menu">
       <ul class="medium">
-        <li>
-          <a
-            href="#home"
-            data-menuanchor="home"
-            class="active"
-            @click="onLinksClick"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#works"
-            data-menuanchor="works"
-            @click="onLinksClick"
-          >
-            Works
-          </a>
-        </li>
-        <li>
-          <a
-            href="#about"
-            data-menuanchor="about"
-            @click="onLinksClick"
-          >
-            About
-          </a>
-        </li>
+        <div class="menu-list-container">
+          <li>
+            <a
+                    href="#home"
+                    data-menuanchor="home"
+                    class="active"
+                    @click="onLinksClick"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+                    href="#works"
+                    data-menuanchor="works"
+                    @click="onLinksClick"
+            >
+              Works
+            </a>
+          </li>
+          <li>
+            <a
+                    href="#about"
+                    data-menuanchor="about"
+                    @click="onLinksClick"
+            >
+              About
+            </a>
+          </li>
+        </div>
       </ul>
     </nav>
   </div>
