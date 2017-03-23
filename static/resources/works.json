@@ -48,12 +48,12 @@
     "assets": [
       "/static/images/works/internship/image1.png",
       "/static/images/works/internship/image2.png",
-      "/static/images/works/internship/image3.png",
       "/static/images/works/internship/image4.png",
       "/static/images/works/internship/image5.png",
       "/static/images/works/internship/image6.png",
       "/static/images/works/internship/image7.png",
-      "/static/images/works/internship/image8.png"
+      "/static/images/works/internship/image8.png",
+      "/static/images/works/internship/image3.png"
     ],
     "type": "UI/UX design",
     "client": "School project"
