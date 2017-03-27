@@ -4,9 +4,7 @@
     "title": "Jamstagr",
     "cover": "/static/images/covers/jamstagr.png",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices fermentum justo eu ultricies. Integer orci enim, tincidunt non elit in, imperdiet facilisis est.",
-      "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
-      "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
+      "Jamstagr is an online social network proposing to connect musicians who wish to play the time of one evening or create a music band. The website is currently under redesign and we are working on a new version of the service."
     ],
     "assets": [
       "/static/images/works/jamstagr/image1.png",
@@ -22,9 +20,7 @@
     "title": "Tesla Project",
     "cover": "/static/images/covers/tesla.png",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices fermentum justo eu ultricies. Integer orci enim, tincidunt non elit in, imperdiet facilisis est.",
-      "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
-      "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
+      "The goal of the project was to design the interface of the Tesla dashboard. But we had a big constraint : adapting the design to a movie. So we chose « Oblivion »."
     ],
     "assets": [
       "/static/images/works/tesla/image1.jpg",
@@ -38,12 +34,10 @@
   },
   {
     "id": 3,
-    "title": "Stage",
+    "title": "Cartonnages GIL",
     "cover": "/static/images/covers/stage.png",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices fermentum justo eu ultricies. Integer orci enim, tincidunt non elit in, imperdiet facilisis est.",
-      "Pellentesque orci enim, congue vitae cursus nec, auctor nec nisi. Ut arcu tortor, viverra ac lorem et, volutpat faucibus enim. Donec condimentum vestibulum imperdiet. In hac habitasse platea dictumst. Maecenas non turpis eget arcu lobortis bibendum eget eget mauris. Suspendisse consectetur orci sit amet purus consectetur, at varius ligula.",
-      "Placerat pellentesque feugiat sodales massa, placerat porttitor ipsum. Nam at neque eu elit ultrices facilisis. Ut tempor eget felis vel blandit. Mauris viverra aliquam tempus."
+      "Cartonnages GIL is the company where I did my internship. My goal was to design POS advertising (Point Of Sale). This internship required a lot of reflection , autonomy and creativity for demanding customers."
     ],
     "assets": [
       "/static/images/works/internship/image1.png",
@@ -55,15 +49,21 @@
       "/static/images/works/internship/image8.png",
       "/static/images/works/internship/image3.png"
     ],
-    "type": "UI/UX design",
+    "type": "3D design",
     "client": "School project"
   },
   {
     "id": 4,
     "title": "Portfolio",
     "cover": "/static/images/covers/portfolio.png",
+    "description": [
+      "A project realized for a friend who needed a new design of his protfolio. He asked me for a refine and efficient website."
+    ],
     "assets": [
-      "/static/images/covers/jamstagr.png"
+      "/static/images/works/portfolio/home.png",
+      "/static/images/works/portfolio/works.png",
+      "/static/images/works/portfolio/about.png",
+      "/static/images/works/portfolio/work-jam.png"
     ],
     "type": "UI/UX design",
     "client": "School project"
@@ -72,11 +72,18 @@
     "id": 5,
     "title": "Mia",
     "cover": "/static/images/covers/mia.png",
-    "assets": [
-      "/static/images/covers/jamstagr.png",
-      "https://player.vimeo.com/video/204166688"
+    "description": [
+      "The MIA project is a short film that we realized as students. It talks about a robot with an artificial intelligence which discovers the world with his friend Victor. The goal of the project was also to create a whole communication behind the film, such as designing a site to promote it."
     ],
-    "type": "UI/UX design",
+    "assets": [
+      "https://player.vimeo.com/video/204166688",
+      "/static/images/works/mia/home.png",
+      "/static/images/works/mia/page2.png",
+      "/static/images/works/mia/page3.png",
+      "/static/images/works/mia/page4.png",
+      "/static/images/works/mia/page5.png"
+    ],
+    "type": "Short film",
     "client": "School project"
   }
 ]
