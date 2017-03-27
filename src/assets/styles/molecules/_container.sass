@@ -78,10 +78,15 @@
 
 .arrows-container
   width: 50%
+  display: flex
+  align-items: center
 
   &.prev
-    text-align: right
+    justify-content: flex-end
     border-right: 2px solid $white
+
+    a
+      text-align: right
 
 .iframe-container
   position: relative

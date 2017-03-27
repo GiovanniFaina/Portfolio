@@ -16,7 +16,7 @@
     transition: $main-transition
 
   .works-list-container
-    transform: skew(-20deg) translate3d(0, -100px, 0)
+    transform: translate3d(0, -100px, 0)
     opacity: 0
     transition: $main-transition .3s
     position: relative
@@ -27,7 +27,7 @@
 
     &.visible
       opacity: 1
-      transform: skew(-20deg) translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
 
     +phoneAndTablet
       width: 100vw
@@ -51,16 +51,17 @@
           transform: skew(0)
 
     &:nth-child(even)
-      transform: skew(-20deg) translate3d(0, 170px, 0)
+      transform: translate3d(0, 170px, 0)
 
       &.visible
-        transform: skew(-20deg) translate3d(0, 70px, 0)
+        transform: translate3d(0, 70px, 0)
 
 
     .works-list-wrapper
       height: 530px
       width: 130px
       position: relative
+      transform: skew(-20deg)
 
       +phoneAndTablet
         transform: skew(-20deg)

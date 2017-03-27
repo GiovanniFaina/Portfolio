@@ -67,7 +67,8 @@
       "/static/images/works/portfolio/work-jam.png"
     ],
     "type": "UI/UX design",
-    "client": "School project"
+    "client": "School project",
+    "link": "http://valentin-crochemore.fr/"
   },
   {
     "id": 5,
@@ -85,6 +86,7 @@
       "/static/images/works/mia/page5.png"
     ],
     "type": "Short film",
-    "client": "School project"
+    "client": "School project",
+    "link": "http://mia-lefilm.fr/"
   }
 ]

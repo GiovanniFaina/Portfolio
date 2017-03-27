@@ -51,8 +51,19 @@ p
   display: inline-block
   vertical-align: middle
 
-  +phone
+  a
+    color: $main-orange
+    text-decoration: none
+    transition: $main-transition
+
+    &:hover
+      opacity: .6
+
+  +phoneAndTablet
     font-size: 12px
+
+    .developed-by
+      display: none
 
 .work-description-container
   .content

@@ -27,6 +27,15 @@
             </li>
         </ul>
     </div>
+    <div v-if="work.link" class="work-link-container">
+      <a :href="work.link" target="_blank">
+        View the project
+        <span id="top" class="border-delimiter"></span>
+        <span id="right" class="border-delimiter"></span>
+        <span id="bottom" class="border-delimiter"></span>
+        <span id="left" class="border-delimiter"></span>
+      </a>
+    </div>
     <div class="navigation medium">
       <div class="arrows-container prev">
         <router-link
