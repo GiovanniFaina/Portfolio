@@ -81,6 +81,9 @@
       }
     },
     mounted: function () {
+      $(window).focusout(function () {
+        $('.work-link-container a').blur()
+      })
       $('.images-list-container').removeClass('visible')
       $('nav, .logo-container').remove()
       $('.images-list-container ul li').hide()
