@@ -2,7 +2,10 @@
     <div class="footer-container">
         <div class="about-wrapper">
             <div class="copyright ultra-light">
-                <p>&copy; Giovanni Faina - 2017<span class="developed-by"> - developed by <a href="http://valentin-crochemore.fr" target="_blank">Valentin Crochemore</a></span></p>
+                <p>&copy; Giovanni Faina - 2017</p>
+                <p class="developed-by">Developed by
+                    <a href="http://valentin-crochemore.fr" target="_blank">Valentin Crochemore</a>
+                </p>
             </div>
             <div class="socials">
                 <ul>

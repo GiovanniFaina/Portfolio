@@ -49,21 +49,26 @@ p
 .copyright p
   font-size: 20px
   margin: 0
-  display: inline-block
-  vertical-align: middle
+  line-height: 1.1em
 
-  a
-    color: $main-orange
-    text-decoration: none
-    transition: $main-transition
+  &.developed-by
+    font-size: 16px
 
-    &:hover
-      opacity: .6
+    a
+      color: $main-orange
+      text-decoration: none
+      transition: $main-transition
 
-  +phoneAndTablet
+      &:hover
+        opacity: .6
+
+  +tablet
+    font-size: 16px !important
+
+  +phone
     font-size: 12px
 
-    .developed-by
+    &.developed-by
       display: none
 
 .work-description-container
