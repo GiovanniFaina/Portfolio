@@ -45,8 +45,21 @@
     display: flex
     align-items: center
 
-  +phone
-    bottom: 0
+  +phoneAndTablet
+    .about-wrapper
+      flex-direction: column-reverse
+
+      .copyright,
+      .socials
+        width: 100%
+        float: none
+        text-align: center
+
+      .copyright
+        margin-top: 10px
+
+        p
+          text-align: center
 
   .copyright,
   .socials

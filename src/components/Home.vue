@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="wrapper">
-      <h2 class="semi-bold">2D & 3D Designer</h2>
+      <h2 class="semi-bold">UX/UI & 3D Designer</h2>
       <p>Looking for an internship from June to December<br>
          in UX / UI design or 3D design</p>
     </div>

@@ -51,25 +51,16 @@ p
   margin: 0
   line-height: 1.1em
 
-  &.developed-by
-    font-size: 16px
+  a
+    color: $main-orange
+    text-decoration: none
+    transition: $main-transition
 
-    a
-      color: $main-orange
-      text-decoration: none
-      transition: $main-transition
-
-      &:hover
-        opacity: .6
-
-  +tablet
-    font-size: 16px !important
+    &:hover
+      opacity: .6
 
   +phone
-    font-size: 12px
-
-    &.developed-by
-      display: none
+    font-size: 16px
 
 .work-description-container
   .content
