@@ -75,6 +75,11 @@
 .images-list-container
   z-index: 2
   position: relative
+  opacity: 0
+
+  &.visible
+    opacity: 1
+    transition: $main-transition .3s
 
 .arrows-container
   width: 50%

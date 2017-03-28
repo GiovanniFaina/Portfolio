@@ -81,6 +81,7 @@
       }
     },
     mounted: function () {
+      $('.images-list-container').removeClass('visible')
       $('nav, .logo-container').remove()
       $('.images-list-container ul li').hide()
       works.query().then(response => {
@@ -88,6 +89,7 @@
         this.work = this.works.find(this.findWorkById)
         this.isFirstWork = parseInt(this.$route.params.id) !== 1
         this.isLastWork = parseInt(this.$route.params.id) !== this.works.length
+        this.redirectIf404()
       })
       this.$Lazyload.$on('loaded', this.toggleImagesWidth)
     },
@@ -113,6 +115,7 @@
     },
     watch: {
       '$route' (to, from) {
+        $('.images-list-container').removeClass('visible')
         $('.arrows').blur()
         this.work = this.works.find(this.findWorkById)
         this.isFirstWork = parseInt(to.params.id) !== 1
@@ -123,10 +126,17 @@
       }
     },
     methods: {
+      redirectIf404: function () {
+        let workId = parseInt(this.$route.params.id)
+        if (workId > this.works.length) {
+          this.$router.go(-1)
+        }
+      },
       findWorkById: function (work) {
         return work.id === parseInt(this.$route.params.id)
       },
       toggleImagesWidth: function ({ el, naturalHeight, naturalWidth }) {
+        $('.images-list-container').addClass('visible')
         let imageClass = this.isImagePortrait(naturalWidth, naturalHeight) ? 'half-width' : 'full-width'
         $(el).parent().removeClass('half-width').removeClass('full-width').addClass(imageClass)
         $('.iframe-container').parent().removeClass('half-width').addClass('full-width')

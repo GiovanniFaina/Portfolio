@@ -1,7 +1,10 @@
 .work-images
   width: 100%
-  transition: $main-transition
+  transition: $main-transition .3s
   opacity: 0
+
+  &[lazy=loading]
+    opacity: 0
 
   &[lazy=loaded]
     opacity: 1
