@@ -48,7 +48,6 @@
             $('#menu ul .menu-list-container').children().slice(0, 2).each(function (index, element) {
               $(element).addClass('highlight')
             })
-            $('.works-list .works-list-container').addClass('visible')
           } else if (nextIndex === 3) {
             $('.pulse-container').removeClass('visible')
             $('.logo-container a').removeClass('active')
