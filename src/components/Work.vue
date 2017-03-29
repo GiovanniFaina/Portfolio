@@ -85,7 +85,7 @@
         $('.work-link-container a').blur()
       })
       $('.images-list-container').removeClass('visible')
-      $('nav, .logo-container').remove()
+      $('nav, .logo-container, .hamburger').remove()
       $('.images-list-container ul li').hide()
       works.query().then(response => {
         this.works = response.data

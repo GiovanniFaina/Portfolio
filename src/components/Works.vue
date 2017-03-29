@@ -65,7 +65,7 @@
         let windowWidth = window.innerWidth
         let factor = $(event.target).data('index')
         $('.works-list-container').removeClass('active')
-        $(event.target).addClass('active')
+        $(event.target).next().addClass('active')
         if (factor < 5) {
           this.slideLeft(windowWidth, factor)
         }
@@ -80,7 +80,7 @@
         let windowWidth = window.innerWidth
         let factor = $(event.target).data('index')
         $('.works-list-container').removeClass('active')
-        $(event.target).addClass('active')
+        $(event.target).prev().addClass('active')
         if (factor > 1) {
           this.slideRight(windowWidth, factor)
         }

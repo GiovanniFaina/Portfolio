@@ -1,10 +1,12 @@
 <template>
-  <div id="fullpage">
-    <logo></logo>
-    <app-menu></app-menu>
-    <home></home>
-    <works></works>
-    <about></about>
+  <div class="app-index">
+    <div id="fullpage">
+      <logo></logo>
+      <app-menu></app-menu>
+      <home></home>
+      <works></works>
+      <about></about>
+    </div>
   </div>
 </template>
 
