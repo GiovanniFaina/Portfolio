@@ -30,7 +30,7 @@
               <p class="type">{{ work.type }}</p>
             </router-link>
             <div class="cover-container">
-              <img :src="work.cover">
+              <img v-lazy="work.cover">
             </div>
           </div>
         </v-touch>
