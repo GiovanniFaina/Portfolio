@@ -6,7 +6,7 @@
           I have a passion for UX / UI design and 3D design.</p>
         <p>Feel free to contact me at : <a class="mailto" href="mailto:fainagiovanni@gmail.com">fainagiovanni@gmail.com</a> !</p>
         <div class="resume-container">
-          <a href="#">
+          <a target="_blank" href="/static/resources/cv.pdf">
             Download my resume
             <span id="top" class="border-delimiter"></span>
             <span id="right" class="border-delimiter"></span>
